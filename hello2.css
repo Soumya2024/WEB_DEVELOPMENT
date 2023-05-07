@@ -1,0 +1,12 @@
+body{padding: 0px;margin: 0px;}
+.navbar{position: relative; background: #000;}
+#navlist{list-style-type:none;display: flex;padding: 0px;margin: 0px;background: #000;}
+#navlist li{flex: auto;text-align: center;padding: 1.6em;font-size: 18px;color: #fff;}
+#navlist li:hover{background: #ff0000;}
+#toggle-nav{display: none;margin: auto;cursor: pointer;}
+
+@media only screen and (max-width:479px){
+#toggle-nav{display: block;color: white;}
+.navbar{padding: 1.6em;}
+#navlist{flex-direction: column;display: none;}
+}

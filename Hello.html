@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Head">
+<meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
+<meta name="author" content="Debraj Bhattacharya">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAVIGATION</title>
+<link href="hello2.css" rel="stylesheet" >
+<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+	
+
+			<nav class="navbar">
+				<span id="toggle-nav" onclick="toggleNav()">
+					<i class="fa fa-bars"></i>
+				</span>
+
+				<ul id="navlist">
+					<li>Home</li>
+					<li>About us</li>
+					<li>Service</li>
+					<li>Product</li>
+					<li>Contact us</li>
+				</ul>
+			</nav>
+	
+
+</body>
+
+<script>
+	var nav = document.getElementById('navlist');
+
+	function toggleNav() {
+
+		if ( nav.style.display === "" )
+		nav.style.display = "block";
+		
+		else
+		nav.style.display = "";	
+
+	}
+
+	function windowResizeHandler () {
+		if (screen.width > 479 )
+			nav.style.display = "";
+	}
+
+	window.addEventListener("resize",windowResizeHandler);
+
+</script>
+
+</html>
